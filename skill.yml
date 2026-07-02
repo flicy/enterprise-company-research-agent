@@ -1,0 +1,41 @@
+name: enterprise-company-research-agent
+version: 1.0.0
+type: instruction-skill
+entry: SKILL.md
+license: MIT
+summary:
+  zh: 面向企业客户的供应商、公司与产品深度调研 Agent。
+  en: An enterprise supplier, company, and product research agent.
+description:
+  zh: 基于公开证据检索、身份核验、纵向发展分析、横向竞品对比、风险合规判断和采购建议，生成企业决策报告。
+  en: Produces enterprise decision reports using public evidence retrieval, identity verification, lifecycle analysis, peer comparison, risk and compliance judgment, and procurement recommendations.
+inputs:
+  - name: subject
+    required: true
+    description:
+      zh: 研究对象，例如公司、供应商、产品、品牌、集团、子公司、人物或行业概念。
+      en: Research subject, such as a company, supplier, product, brand, group, subsidiary, person, or category concept.
+  - name: decision_context
+    required: true
+    description:
+      zh: 决策场景，例如采购准入、续约、竞品分析、客户研究、合作评估、投融资初筛或风险预警。
+      en: Decision context, such as procurement onboarding, renewal, competitive analysis, customer research, partnership review, investment screening, or risk alert.
+  - name: focus_areas
+    required: false
+    description:
+      zh: 用户重点关注的问题，例如价格、产品能力、客户案例、技术路线、数据安全、合规资质、诉讼处罚、交付能力或财务稳定性。
+      en: User focus areas, such as pricing, product capability, customer proof, technology, data security, compliance certifications, litigation, penalties, delivery capacity, or financial stability.
+outputs:
+  - name: enterprise_research_report
+    description:
+      zh: 结论先行的企业调研报告，包含身份核验、发展脉络、产品能力、竞品对比、风险合规、采购建议和证据账本。
+      en: A decision-first enterprise research report covering identity verification, lifecycle, product capability, comparison, risk and compliance, procurement recommendation, and evidence ledger.
+permissions:
+  network: required
+  filesystem: optional
+tags:
+  - enterprise-research
+  - supplier-diligence
+  - vendor-evaluation
+  - product-research
+  - competitive-analysis

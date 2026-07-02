@@ -1,0 +1,7 @@
+interface:
+  display_name: "Enterprise Company Research"
+  short_description: "供应商、企业与产品深度调研 Agent"
+  default_prompt: "Use $enterprise-company-research-agent to research a supplier, company, or product for an enterprise decision."
+
+policy:
+  allow_implicit_invocation: true
