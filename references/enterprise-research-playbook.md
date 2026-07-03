@@ -1,8 +1,8 @@
-# 企业公司调研剧本 / Enterprise Company Research Playbook
+# 企业公司调研剧本
 
-## 中文版本
+SKILL.md 的深度参考。按需读取，执行标准报告或完整尽调时应通读。
 
-### 1. 研究输入卡
+## 1. 研究输入卡
 
 启动时先填这张卡；用户未给的信息可以推断，但要标注。
 
@@ -10,83 +10,104 @@
 |---|---|
 | 研究对象 | 公司/供应商/产品/集团/子公司/人物/概念 |
 | 决策场景 | 采购、准入、续约、竞品、客户、合作、投资、风险预警 |
-| 输出深度 | 快速 memo、标准报告、完整尽调 |
+| 输出深度 | 快速 memo、标准报告、完整尽调（映射见 SKILL.md 深度控制） |
 | 时间范围 | 默认从成立/发布到今天 |
 | 地域范围 | 全球、中国、美国、欧盟、东南亚等 |
 | 关注点 | 法务、价格、技术、产品、客户、财务、供应链、数据安全 |
-| 交付格式 | Markdown、PDF、PPT、表格、双语 |
+| 交付格式 | Markdown（默认）、PDF、PPT、表格、双语 |
 
-### 2. 证据分级
+## 2. 证据分级与账本格式
 
-| 等级 | 名称 | 可用于什么结论 |
+### 2.1 分级
+
+| 等级 | 典型来源 | 可支撑什么 |
 |---|---|---|
-| A | 一手强证据 | 法律主体、财务、价格、产品能力、管理层、公告 |
-| B | 一手弱证据 | 官网营销页、创始人访谈、客户案例、产品文档 |
-| C | 二手可信证据 | 权威媒体原创、行业报告、第三方数据库 |
-| D | 弱证据 | 聚合页、转载、论坛传闻、未登录社交摘要 |
-| X | 冲突/不可达 | 只能写入风险和待核验，不得作为确定结论 |
+| A | 监管/工商/SEC/交易所文件、法院文书、官方公告 | 直接支撑关键结论：法律主体、财务、价格、处罚、管理层 |
+| B | 官网产品/定价/文档页、创始人高管原话、客户联合公告 | 可支撑关键结论，但注意营销口径，数字需交叉核验 |
+| C | 权威媒体原创、分析师报告、第三方数据库 | 只能支撑推断和线索，不得单独支撑关键结论 |
+| D | 聚合转载、论坛传闻、匿名社交内容 | 只能作为待核验线索 |
+| X | 冲突或不可达 | 只进风险与待核验清单 |
 
-关键结论必须至少有 A/B 级证据；如果只有 C/D，写成推断。
+关键结论必须有 A/B 级证据；只有 C/D 时降级为推断并显式标注。
 
-### 3. 企业研究模块
+### 2.2 账本格式
 
-根据场景裁剪，但标准报告至少覆盖这些模块：
+报告末尾必须包含证据账本，格式：
 
-1. **Executive decision memo**
-   - 一句话结论
-   - 推荐动作：通过、谨慎通过、补充尽调、暂缓、淘汰
-   - 最高风险 3-5 条
-   - 最值得信任的证据 3-5 条
+| 关键事实 | 来源 | URL | 访问日期 | 等级 | 支撑的结论 |
+|---|---|---|---|---|---|
 
-2. **Scope and identity**
-   - 法律主体、品牌、产品、母子公司、关联公司
-   - 同名实体排除
-   - 研究边界
+另附三张清单：冲突事实表（各方说法 + 来源 + 采信理由）、不可达来源、下一步尽调问题。
 
-3. **Vertical lifecycle**
-   - 成立/发布背景
-   - 创始团队/管理层
-   - 融资、并购、客户、产品、战略转向
-   - 关键阶段与路径依赖
+所有 URL 必须是本次会话真实打开过的；打不开的进不可达清单，不得凭记忆补 URL。
 
-4. **Current company state**
-   - 经营状态、注册资本、实缴/股权、员工规模
-   - 收入/融资/客户规模（只写可证实或明确推断）
-   - 招聘、办公室、组织扩张信号
+## 3. 检索入口与查询手法
 
-5. **Product and capability**
-   - 核心产品/产品线
-   - 当前功能、技术路线、部署方式、价格/合同
-   - 产品成熟度：概念、Beta、商用、规模化、衰退
+### 3.1 注册与监管入口（法律主体核验）
 
-6. **Customer and market proof**
-   - 客户案例、行业、采购人群
-   - 留存/续费/替换证据
-   - 真实用户反馈
+| 地域 | 入口 | 用途 |
+|---|---|---|
+| 中国大陆 | 国家企业信用信息公示系统 gsxt.gov.cn | 官方工商登记：主体、状态、股东、行政处罚 |
+| 中国大陆 | 裁判文书网 wenshu.court.gov.cn、中国执行信息公开网 zxgk.court.gov.cn | 诉讼判决、被执行人、失信名单 |
+| 中国大陆 | 信用中国 creditchina.gov.cn | 行政处罚、严重失信 |
+| 美国 | SEC EDGAR 全文检索 efts.sec.gov | 上市公司 filings；私营公司融资查 Form D |
+| 美国 | 各州 Secretary of State（Delaware、CA 等） | 注册实体、存续状态 |
+| 美国 | CourtListener / PACER | 联邦诉讼 |
+| 英国 | Companies House | 免费年报、董事、股权结构 |
+| 欧盟 | GDPR Enforcement Tracker（线索）→ 各国 DPA 原文 | 数据保护处罚 |
+| 全球 | OFAC Sanctions Search、EU Sanctions Map、BIS Entity List | 制裁与出口管制筛查 |
+| 全球 | Google Patents / USPTO、GitHub org | 技术资产、工程活跃度 |
 
-7. **Horizontal comparison**
-   - 直接竞品
-   - 替代供应商
-   - 上游/下游依赖
-   - 对比维度：能力、价格、交付、资质、生态、风险
+企查查/天眼查/爱企查/Crunchbase/PitchBook 可作为发现层入口先用，但关键结论要回到上表官方来源。
 
-8. **Risk and compliance**
-   - 法律诉讼、行政处罚、舆情、制裁、出口管制
-   - 数据安全、隐私、安全认证、行业资质
-   - 供应链、单点依赖、财务稳定性
+### 3.2 查询模板
 
-9. **Cross-axis insight**
-   - 历史如何塑造当前能力和风险
-   - 竞争格局对未来的影响
-   - 最可能/最危险/最乐观情景
+- 诉讼负面（中文）：`"公司全名" 判决 OR 被执行人 OR 行政处罚 OR 仲裁 OR 欠薪`
+- 诉讼负面（英文）：`"Company Inc" lawsuit OR settlement OR fined OR "data breach" OR layoffs`
+- 定价线索：`site:vendor.com pricing`；`"vendor" pricing site:reddit.com OR site:news.ycombinator.com`；G2/Capterra 报价区间作为 C 级线索
+- 客户真实性：对官网 logo 墙逐个反查 `site:customer.com "vendor名"` 或搜联合新闻稿；case study 必须看落款日期，无日期按旧料处理
+- 融资核验：媒体报道定位轮次 → 回到官方公告 / SEC Form D / 工商注册资本变更
+- 招聘与规模：官方 careers 页在招岗位 + LinkedIn 员工数及近 6 个月趋势 + 主流招聘平台在招岗位
 
-10. **Evidence ledger**
-    - 已访问来源
-    - 关键事实表
-    - 冲突事实
-    - 失败/不可达来源
+### 3.3 活性信号（判断"还活着吗"）
 
-### 4. 标准报告模板
+按强弱排序：近 90 天产品 changelog / release notes；careers 页在招岗位与发布日期；GitHub org 近 90 天 commit（devtools 类厂商）；官方博客/公告频率；高管近 6 个月公开发声；域名/SSL 证书状态。
+
+多个信号停摆 ≥12 个月时，在报告中显式提出"经营活跃度存疑"，并列为最高风险之一。
+
+### 3.4 历史对照
+
+用 web.archive.org 取官网首页、产品页、定价页 12 个月和 24 个月前的快照，与当前版本对照：产品线增删、定价模式变化、客户 logo 变化、定位口号变化。这是还原"纵向战略转向"最便宜的证据来源。
+
+### 3.5 低证据协议
+
+对象公开足迹极少（小型私企、新成立、刻意低调）时，最低完成四件事：
+
+1. 官方注册核验（3.1 对应地域入口）
+2. 制裁与出口管制名单筛查
+3. 官网/域名活性检查
+4. 同名实体排除
+
+然后明确写"公开证据不足以支撑 X 判断"，列出必须走人工尽调渠道（管理层访谈、保密财务、实地考察、客户访谈）才能回答的问题。禁止用行业平均值或"同类公司通常如何"填充对象缺失的事实。
+
+## 4. 企业研究模块
+
+判断任何对象先过六问：**它是谁**（主体边界清楚吗）→ **还在正常运转吗** → **能交付吗** → **安全合规吗** → **可替代吗** → **值得下一步投入吗**。下面 10 个模块都在回答这六问。
+
+1. **Executive decision memo**：一句话结论；推荐动作（通过/谨慎通过/补充尽调/暂缓/淘汰）；最高风险 3-5 条；最强证据 3-5 条。
+2. **Scope and identity**：法律主体、品牌、产品、母子公司、关联公司；同名实体排除；研究边界。
+3. **Vertical lifecycle**：成立/发布背景；创始团队与管理层；融资、并购、客户、产品、战略转向；关键阶段与路径依赖（用 3.4 历史对照取证）。
+4. **Current company state**：经营状态、注册资本、股权、员工规模；收入/融资/客户规模（只写可证实或明确标注的推断）；招聘、办公室、组织扩张信号（用 3.3 活性信号）。
+5. **Product and capability**：核心产品与产品线；当前功能、技术路线、部署方式、价格/合同线索；成熟度分档：概念、Beta、商用、规模化、衰退。
+6. **Customer and market proof**：客户案例、行业分布、采购人群；留存/续费/替换证据；真实用户反馈（用 3.2 客户真实性反查）。
+7. **Horizontal comparison**：直接竞品、替代供应商、上下游依赖；对比维度：能力、价格、交付、资质、生态、风险。
+8. **Risk and compliance**：诉讼、行政处罚、舆情、制裁、出口管制；数据安全、隐私、安全认证、行业资质；供应链、单点依赖、财务稳定性。
+9. **Cross-axis insight**：历史如何塑造当前能力和风险；竞争格局对未来的影响；最可能/最危险/最乐观三情景。
+10. **Evidence ledger**：按 2.2 格式输出。
+
+快速 memo 只做模块 1、2、4、8 的摘要版；完整尽调在全模块之上追加第 6 节评分表和冲突事实逐条分析。
+
+## 5. 标准报告模板
 
 ```markdown
 # [对象] 企业调研报告
@@ -95,12 +116,9 @@
 研究场景：[采购/供应商准入/竞品/合作/投资]
 结论等级：[通过/谨慎通过/补充尽调/暂缓/淘汰]
 
-## 中文版本
+## 1. 决策摘要
 
-### 1. 决策摘要
-
-> [!info] 一句话结论
-> ...
+> 一句话结论：...
 
 | 项目 | 结论 | 证据等级 |
 |---|---|---|
@@ -108,32 +126,24 @@
 | 最大风险 | ... | ... |
 | 最强证据 | ... | ... |
 
-### 2. 身份与范围
-
-### 3. 纵向：从成立到今天
-
-### 4. 当前状态
-
-### 5. 产品与能力
-
-### 6. 客户与市场证明
-
-### 7. 横向：同类/竞品/替代供应商
-
-### 8. 风险、合规与采购判断
-
-### 9. 横纵交汇洞察
-
-### 10. 证据账本
-
-## English Version
-
-[Mirror the same structure in English.]
+## 2. 身份与范围
+## 3. 纵向：从成立到今天
+## 4. 当前状态
+## 5. 产品与能力
+## 6. 客户与市场证明
+## 7. 横向：竞品与替代供应商
+## 8. 风险、合规与采购判断
+## 9. 横纵交汇洞察
+## 10. 证据账本
 ```
 
-### 5. 供应商准入评分
+报告语言跟随用户提问语言。用户要求双语时：同文件内"中文版本 + English Version"镜像结构，或成对生成 `*-zh.md` 与 `*-en.md`。
 
-| 维度 | 权重建议 | 评分问题 |
+## 6. 供应商准入评分（可选）
+
+以下权重是通用示例，不是行业标准。正式采购评审前应按行业和场景重新配置权重并注明依据；用户未要求评分时可省略本节。
+
+| 维度 | 示例权重 | 评分问题 |
 |---|---:|---|
 | 身份清晰度 | 15% | 法律主体、母子关系、品牌是否清楚 |
 | 产品成熟度 | 20% | 是否已商用、是否有稳定客户 |
@@ -143,103 +153,19 @@
 | 生态与替代性 | 10% | 是否锁定、是否有可替代供应商 |
 | 战略匹配 | 10% | 是否符合采购方长期路线 |
 
-评分建议：
+参考分档：80-100 通过；65-79 谨慎通过（附条件）；50-64 补充尽调；35-49 暂缓；0-34 淘汰。
 
-- 80-100：通过
-- 65-79：谨慎通过，附条件
-- 50-64：补充尽调
-- 35-49：暂缓
-- 0-34：淘汰
-
-### 6. 质检门槛
+## 7. 质检门槛
 
 交付前逐项检查：
 
+- 每条 A/B 级关键事实是否就地标注了来源链接与访问日期？
+- 所有引用 URL 是否都在本次会话真实打开过？
 - 是否打开并引用了当前日期附近的一手来源？
-- 公司法律主体和产品/品牌是否分清？
-- 是否把父公司数据误写成子产品数据？
-- 是否有证据账本和冲突事实表？
+- 公司法律主体和产品/品牌是否分清？是否把父公司数据误写成子产品数据？
+- 是否有证据账本、冲突事实表、不可达来源清单？
 - 是否明确区分事实、推断、观点？
-- 是否回答了企业决策问题，而不是只写故事？
+- 是否回答了企业决策问题（能不能采购/合作/依赖），而不是只写故事？
 - 是否列出未核验项和下一步尽调问题？
-- 如果用户要求双语交付，Markdown 是否包含完整中文和英文版本？
-
-## English Version
-
-### 1. Research Intake Card
-
-Fill this card first. Infer missing fields when reasonable, but label the inference.
-
-| Field | Description |
-|---|---|
-| Subject | Company, supplier, product, group, subsidiary, person, or concept |
-| Decision context | Procurement, onboarding, renewal, competitor, customer, partnership, investment, risk alert |
-| Depth | Quick memo, standard report, full diligence |
-| Time range | Default from founding or launch to today |
-| Geography | Global, China, U.S., EU, Southeast Asia, etc. |
-| Focus | Legal, price, technology, product, customers, finance, supply chain, data security |
-| Format | Markdown, PDF, slides, spreadsheet, bilingual |
-
-### 2. Evidence Grades
-
-| Grade | Name | Can support |
-|---|---|---|
-| A | Strong primary evidence | Legal entity, financials, pricing, product capability, executives, official announcements |
-| B | Weaker primary evidence | Marketing pages, founder interviews, customer cases, docs |
-| C | Credible secondary evidence | Original reputable media, analyst reports, third-party databases |
-| D | Weak evidence | Aggregators, reposts, forum rumors, unauthenticated social snippets |
-| X | Conflicting or unreachable | Risk notes and follow-up only |
-
-Key conclusions need A/B evidence. If only C/D evidence exists, state the claim as an inference.
-
-### 3. Enterprise Research Modules
-
-Use these modules as the standard set and trim by context:
-
-1. **Executive decision memo**: conclusion, recommendation, top risks, strongest evidence.
-2. **Scope and identity**: legal entity, brand, product, parent/subsidiaries, exclusions.
-3. **Vertical lifecycle**: origin, founders, financing, customers, products, strategy shifts, path dependence.
-4. **Current company state**: operating status, capital, ownership, employees, revenue/funding/customer signals.
-5. **Product and capability**: product lines, functionality, technology, deployment, pricing, maturity.
-6. **Customer and market proof**: cases, industries, buyers, retention/replacement evidence, user feedback.
-7. **Horizontal comparison**: direct competitors, substitute suppliers, dependencies, comparison matrix.
-8. **Risk and compliance**: litigation, penalties, sanctions, export controls, data security, certifications, supply chain, stability.
-9. **Cross-axis insight**: how history shaped capability and risk; scenarios.
-10. **Evidence ledger**: visited sources, key facts, conflicts, unreachable sources.
-
-### 4. Standard Report Template
-
-Use the Chinese template above and mirror the same structure in English when bilingual Markdown is required.
-
-### 5. Supplier Qualification Scoring
-
-| Dimension | Suggested weight | Question |
-|---|---:|---|
-| Identity clarity | 15% | Are legal entity, parent/subsidiary, and brand relationships clear? |
-| Product maturity | 20% | Is it commercial and used by stable customers? |
-| Delivery capability | 15% | Are implementation, support, and SLA credible? |
-| Financial/operating stability | 15% | What do funding, revenue, hiring, layoffs, and cash signals show? |
-| Compliance/security | 15% | What do privacy, security, certifications, penalties, and litigation show? |
-| Ecosystem and substitutability | 10% | Is there lock-in? Are alternatives available? |
-| Strategic fit | 10% | Does the vendor match the buyer's long-term direction? |
-
-Recommendation bands:
-
-- 80-100: approve
-- 65-79: approve with caution
-- 50-64: request more diligence
-- 35-49: pause
-- 0-34: reject
-
-### 6. Quality Gates
-
-Before delivery, verify:
-
-- Did you open and cite recent primary sources?
-- Are legal entity, product, and brand separated?
-- Did you avoid substituting parent data for product data?
-- Is there an evidence ledger and conflict table?
-- Are facts, inferences, and opinions separated?
-- Does the report answer the enterprise decision question?
-- Are unverified items and next diligence questions listed?
-- If bilingual delivery was requested, does Markdown include complete Chinese and English versions?
+- 输出深度是否匹配用户要求（快速 memo 没有写成满配长文）？
+- 如果用户要求双语交付，是否包含完整的中文和英文版本？

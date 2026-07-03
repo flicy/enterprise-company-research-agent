@@ -131,9 +131,10 @@ enterprise-company-research-agent/
 ├── agents/
 │   └── openai.yaml
 └── references/
-    ├── capability-model.md
     └── enterprise-research-playbook.md
 ```
+
+`SKILL.md` 是薄入口：触发条件、流程、深度控制和硬规则。`references/enterprise-research-playbook.md` 是深度参考：证据分级、检索入口与查询手法、研究模块、低证据协议、报告模板和质检门槛，agent 按需读取。
 
 ## 安装
 
@@ -192,7 +193,7 @@ cp -R enterprise-company-research-agent .codebuddy/skills/enterprise-company-res
 - 这个 Skill 需要联网能力才能回答“最新情况”。没有网络时，必须明确标注当前事实无法核验。
 - 不要把第三方数据库当成一手事实；关键数字和结论尽量回到原始来源。
 - 不要提交客户资料、内部评审材料、访问 token、私有路径或账号信息到公开仓库。
-- 如果更新 Markdown 文档，请保持中文和英文两个版本。
+- README 保持中英双语；`SKILL.md` 和 `references/` 是 agent 指令层，保持中文单语以控制加载成本。报告输出语言跟随用户，双语报告由报告层实现。
 
 ## 许可证
 
@@ -329,9 +330,10 @@ enterprise-company-research-agent/
 ├── agents/
 │   └── openai.yaml
 └── references/
-    ├── capability-model.md
     └── enterprise-research-playbook.md
 ```
+
+`SKILL.md` is a thin entry point: triggers, flow, depth control, and hard rules. `references/enterprise-research-playbook.md` is the deep reference: evidence grades, search entry points and query craft, research modules, low-evidence protocol, report template, and quality gates, loaded on demand.
 
 ## Installation
 
@@ -390,7 +392,7 @@ Output: standard English report with evidence ledger and follow-up diligence que
 - This Skill needs web access for “latest status” research. Without network access, current facts must be labeled unverified.
 - Do not treat third-party databases as primary facts. Critical numbers and conclusions should be traced to original sources when possible.
 - Do not commit customer data, internal review material, access tokens, private paths, or account information to a public repository.
-- If Markdown docs are updated, keep both Chinese and English versions.
+- The README stays bilingual. `SKILL.md` and `references/` are the agent instruction layer and stay Chinese-only to control context cost; report output language follows the user, and bilingual reports are produced at the report layer.
 
 ## License
 
