@@ -195,6 +195,14 @@ cp -R enterprise-company-research-agent .codebuddy/skills/enterprise-company-res
 - 不要提交客户资料、内部评审材料、访问 token、私有路径或账号信息到公开仓库。
 - README 保持中英双语；`SKILL.md` 和 `references/` 是 agent 指令层，保持中文单语以控制加载成本。报告输出语言跟随用户，双语报告由报告层实现。
 
+## 相关 Skill
+
+| Skill | 用途 |
+|---|---|
+| [wechat-publish-from-transcript](https://github.com/flicy/wechat-publish-from-transcript) | 把访谈/直播逐字稿变成公众号文章和跨平台内容包 |
+| [prepare-livestream-event](https://github.com/flicy/prepare-livestream-event) | 筹备线上直播活动，生成海报、文案和发布清单 |
+| [publish-skill-to-github](https://github.com/flicy/publish-skill-to-github) | 把本地 Skill 包发布到 GitHub |
+
 ## 许可证
 
 MIT — 见 [LICENSE](./LICENSE)
@@ -393,6 +401,14 @@ Output: standard English report with evidence ledger and follow-up diligence que
 - Do not treat third-party databases as primary facts. Critical numbers and conclusions should be traced to original sources when possible.
 - Do not commit customer data, internal review material, access tokens, private paths, or account information to a public repository.
 - The README stays bilingual. `SKILL.md` and `references/` are the agent instruction layer and stay Chinese-only to control context cost; report output language follows the user, and bilingual reports are produced at the report layer.
+
+## Related Skills
+
+| Skill | Purpose |
+|---|---|
+| [wechat-publish-from-transcript](https://github.com/flicy/wechat-publish-from-transcript) | Turn interview/livestream transcripts into WeChat articles and cross-platform content packs |
+| [prepare-livestream-event](https://github.com/flicy/prepare-livestream-event) | Prepare livestream event launches with posters, copy, and publishing checklists |
+| [publish-skill-to-github](https://github.com/flicy/publish-skill-to-github) | Publish local Skill packages to GitHub |
 
 ## License
 
